@@ -88,42 +88,23 @@
       "type": "stat"
     },
     {
-      "datasource": "${DS_PROMETHEUS}",
+      "id": 29,
+      "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 0
+        },
+  
+      "title": "Nginx",
+      "type": "timeseries",
+      "datasource": {
+        "uid": "${DS_PROMETHEUS}"
+      },
+      "pluginVersion": "8.3.1",
       "description": "",
       "fieldConfig": {
         "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 0,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -135,38 +116,39 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "mappings": [],
+          "decimals": 0,
+          "unit": "short"
         },
         "overrides": []
       },
-      "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 0,
-        "y": 0
-      },
-      "id": 29,
       "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom"
+        "reduceOptions": {
+          "values": false,
+          "calcs": [
+            "last"
+          ],
+          "fields": ""
         },
-        "tooltip": {
-          "mode": "single"
-        }
+        "orientation": "auto",
+        "textMode": "value",
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "text": {}
       },
       "targets": [
-        {
-          "exemplar": true,
-          "expr": "kube_deployment_status_replicas_available{deployment=\"nginx-deployment\"}",
-          "interval": "",
-          "legendFormat": "",
-          "refId": "A"
-        }
-      ],
-      "title": "Nginx",
-      "type": "timeseries"
+          {
+            "exemplar": true,
+            "expr": "kube_deployment_status_replicas_available{deployment=\"nginx-deployment\"}",
+            "interval": "",
+            "legendFormat": "",
+            "refId": "A"
+          }
+        ],
+      "timeFrom": null,
+      "timeShift": null
     },
     {
       "datasource": "${DS_PROMETHEUS}",
