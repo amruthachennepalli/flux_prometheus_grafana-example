@@ -88,69 +88,6 @@
       "type": "stat"
     },
     {
-      "id": 29,
-      "gridPos": {
-          "h": 8,
-          "w": 12,
-          "x": 0,
-          "y": 0
-        },
-  
-      "title": "Nginx",
-      "type": "timeseries",
-      "datasource": {
-        "uid": "${DS_PROMETHEUS}"
-      },
-      "pluginVersion": "8.3.1",
-      "description": "",
-      "fieldConfig": {
-        "defaults": {
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green"
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "mappings": [],
-          "decimals": 0,
-          "unit": "short"
-        },
-        "overrides": []
-      },
-      "options": {
-        "reduceOptions": {
-          "values": false,
-          "calcs": [
-            "last"
-          ],
-          "fields": ""
-        },
-        "orientation": "auto",
-        "textMode": "value",
-        "colorMode": "value",
-        "graphMode": "none",
-        "justifyMode": "auto",
-        "text": {}
-      },
-      "targets": [
-          {
-            "exemplar": true,
-            "expr": "kube_deployment_status_replicas_available{deployment=\"nginx-deployment\"}",
-            "interval": "",
-            "legendFormat": "",
-            "refId": "A"
-          }
-        ],
-      "timeFrom": null,
-      "timeShift": null
-    },
-    {
       "datasource": "${DS_PROMETHEUS}",
       "description": "",
       "fieldConfig": {
