@@ -1,0 +1,89 @@
+{
+    "id": 29,
+    "gridPos": {
+      "x": 0,
+      "y": 0,
+      "w": 12,
+      "h": 8
+    },
+    "type": "timeseries",
+    "title": "Nginx",
+    "targets": [
+      {
+        "expr": "kube_deployment_status_replicas_available{deployment=\"nginx-deployment\"}",
+        "legendFormat": "",
+        "interval": "",
+        "exemplar": true,
+        "refId": "A",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "PBFA97CFB590B2093"
+        }
+      }
+    ],
+    "options": {
+      "tooltip": {
+        "mode": "single"
+      },
+      "legend": {
+        "displayMode": "list",
+        "placement": "bottom",
+        "calcs": []
+      }
+    },
+    "fieldConfig": {
+      "defaults": {
+        "custom": {
+          "drawStyle": "line",
+          "lineInterpolation": "linear",
+          "barAlignment": 0,
+          "lineWidth": 1,
+          "fillOpacity": 0,
+          "gradientMode": "none",
+          "spanNulls": false,
+          "showPoints": "auto",
+          "pointSize": 5,
+          "stacking": {
+            "mode": "none",
+            "group": "A"
+          },
+          "axisPlacement": "auto",
+          "axisLabel": "",
+          "scaleDistribution": {
+            "type": "linear"
+          },
+          "hideFrom": {
+            "tooltip": false,
+            "viz": false,
+            "legend": false
+          },
+          "thresholdsStyle": {
+            "mode": "off"
+          }
+        },
+        "color": {
+          "mode": "palette-classic"
+        },
+        "thresholds": {
+          "mode": "absolute",
+          "steps": [
+            {
+              "value": null,
+              "color": "green"
+            },
+            {
+              "value": 80,
+              "color": "red"
+            }
+          ]
+        },
+        "mappings": []
+      },
+      "overrides": []
+    },
+    "datasource": null
+  }
+
+
+
+
