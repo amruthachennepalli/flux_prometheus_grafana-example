@@ -158,10 +158,6 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "PBFA97CFB590B2093"
-          },
           "exemplar": true,
           "expr": "kube_deployment_status_replicas_available{deployment=\"nginx-deployment\"}",
           "interval": "",
