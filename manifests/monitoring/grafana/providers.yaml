@@ -7,9 +7,9 @@ data:
   providers.yaml: |+
     apiVersion: 1
     providers:
-    - name: dashboard
+    - name: 'default'
       orgId: 1
-      folder: Alerting
+      folder: 'Alerting'
       type: file
       updateIntervalSeconds: 30
       disableDeletion: true
