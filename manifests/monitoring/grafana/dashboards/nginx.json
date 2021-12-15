@@ -114,7 +114,7 @@
             "overrides": []
           },
           "datasource": null
-        }
+        }        
   ],
   "time": {
     "from": "now-6h",
@@ -127,6 +127,7 @@
   "templating": {
     "list": []
   },
+
   "refresh": "5s",
   "schemaVersion": 17,
   "version": 0,
