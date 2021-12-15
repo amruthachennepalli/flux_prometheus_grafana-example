@@ -1,7 +1,28 @@
 {
-    "id": 9,
-    "uid": "nginx-deployment",
-    "title": "Ngnix deployment",
+    "annotations": {
+        "list": [
+          {
+            "builtIn": 1,
+            "datasource": "-- Grafana --",
+            "enable": true,
+            "hide": true,
+            "iconColor": "rgba(0, 211, 255, 1)",
+            "name": "Annotations & Alerts",
+            "target": {
+              "limit": 100,
+              "matchAny": false,
+              "tags": [],
+              "type": "dashboard"
+            },
+            "type": "dashboard"
+          }
+        ]
+      },
+    "description": "nginx sample Grafana dashboard with Prometheus",
+    "fiscalYearStartMonth": 0,
+    "iteration": 1639541377911,
+    "links": [],
+    "liveNow": false,
     "tags": [],
     "style": "dark",
     "timezone": "browser",
@@ -106,11 +127,10 @@
     "templating": {
       "list": []
     },
-    "annotations": {
-      "list": []
-    },
+
     "refresh": "5s",
     "schemaVersion": 17,
     "version": 0,
-    "links": []
+    "uid": "nginx-deployment",
+    "title": "Ngnix deployment"
   }
