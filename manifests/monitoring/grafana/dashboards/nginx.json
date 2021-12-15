@@ -116,12 +116,10 @@
           "datasource": null
         }        
   ],
-
   "time": {
     "from": "now-15m",
     "to": "now"
   },
-
   "timepicker": {
     "time_options": [],
     "refresh_intervals": []
@@ -129,7 +127,6 @@
   "templating": {
     "list": []
   },
-
   "refresh": "5s",
   "schemaVersion": 17,
   "version": 0,
