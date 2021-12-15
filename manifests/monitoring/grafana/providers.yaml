@@ -7,11 +7,14 @@ data:
   providers.yaml: |+
     apiVersion: 1
     providers:
-    - name: 'default'
+    - name: dashboard
       orgId: 1
-      folder: ''
+      folder: Alerting
       type: file
-      disableDeletion: false
+      updateIntervalSeconds: 30
+      disableDeletion: true
       editable: true
+      allowUiUpdates: true
       options:
         path: /etc/grafana/dashboards
+        foldersFromFilesStructure: true
