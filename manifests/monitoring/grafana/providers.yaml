@@ -9,7 +9,7 @@ data:
     providers:
     - name: 'default'
       orgId: 1
-      folder: 'Alerting'
+      folder: ''
       type: file
       updateIntervalSeconds: 30
       disableDeletion: true
