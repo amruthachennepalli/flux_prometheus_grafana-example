@@ -11,10 +11,7 @@ data:
       orgId: 1
       folder: ''
       type: file
-      updateIntervalSeconds: 30
-      disableDeletion: true
+      disableDeletion: false
       editable: true
-      allowUiUpdates: true
       options:
         path: /etc/grafana/dashboards
-        foldersFromFilesStructure: true
