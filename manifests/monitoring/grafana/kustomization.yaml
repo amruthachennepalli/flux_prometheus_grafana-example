@@ -11,4 +11,5 @@ configMapGenerator:
     files:
       - dashboards/control-plane.json
       - dashboards/cluster.json
+      - dashboards/nginx.json
 
